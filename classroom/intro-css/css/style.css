@@ -1,0 +1,15 @@
+.color-red {
+  color: #ff0000;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.font-lower {
+  text-transform: lowercase;
+}
