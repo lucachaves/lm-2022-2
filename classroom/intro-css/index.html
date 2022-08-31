@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <style>
       html {
-        font-size: 20px;
+        font-size: var(--font-size-regular);
       }
 
       p {
@@ -18,15 +18,28 @@
       #first-p {
         text-transform: uppercase;
       }
+
+      a {
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      a:visited {
+        color:aqua;
+      }
     </style>
   </head>
   <body>
     <h1 style="text-align: center; color: #ff0000">Hello, IFPB</h1>
     <p id="first-p" class="font-lower color-red" style="color: #008000">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
-      reprehenderit laborum, quam vero architecto totam fugiat tempora
-      perferendis explicabo eos reiciendis deserunt, laboriosam mollitia tenetur
-      debitis excepturi voluptatem sed culpa.
+      Lorem <a href="https://www.ifpb.edu.br/">IFPB</a> ipsum dolor sit amet
+      consectetur adipisicing elit. Quos, reprehenderit laborum, quam vero
+      architecto totam fugiat tempora perferendis explicabo eos reiciendis
+      deserunt, laboriosam mollitia tenetur debitis excepturi voluptatem sed
+      culpa.
     </p>
     <div class="font-italic">
       <p class="color-red font-bold">
