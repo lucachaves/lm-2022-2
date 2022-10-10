@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: red;
+        height: 20vh;
+      }
+
+      /* 
+        Flexbox CSS
+        https://www.w3.org/TR/css-flexbox-1/
+        https://ifpb.github.io/css-guide/css/layout-flexbox/flex-playground/
+        https://ifpb.github.io/css-guide/css/layout-flexbox/assets/mindmap-property-v1.png
+      */
+
+      main {
+        display: flex;
+        height: 70vh;
+      }
+
+      article {
+        background-color: blue;
+        flex-basis: 70%;
+      }
+
+      nav {
+        background-color: green;
+        flex-basis: 15%;
+        order: -1;
+      }
+
+      aside {
+        background-color: chocolate;
+        flex-basis: 15%;
+      }
+
+      footer {
+        background-color: brown;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>...</header>
+    <main>
+      <article>...</article>
+      <nav>...</nav>
+      <aside>...</aside>
+    </main>
+    <footer>...</footer>
+  </body>
+</html>
