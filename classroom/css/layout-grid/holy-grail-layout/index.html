@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 
+        CSS Grid
+        https://ifpb.github.io/css-guide/css/layout-grid/grid-playground/
+        https://www.w3.org/TR/css-grid-1/
+        https://ifpb.github.io/css-guide/css/layout-grid/assets/mindmap-property.png
+      */
+
+      body {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 20vh 70vh 10vh;
+        grid-template-areas:
+          'header header header'
+          'nav article aside'
+          'footer footer footer';
+      }
+
+      header {
+        background-color: red;
+        grid-area: header;
+      }
+
+      article {
+        background-color: blue;
+        grid-area: article;
+      }
+
+      nav {
+        background-color: green;
+        grid-area: nav;
+      }
+
+      aside {
+        background-color: chocolate;
+        grid-area: aside;
+      }
+
+      footer {
+        background-color: brown;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>...</header>
+    <article>...</article>
+    <nav>...</nav>
+    <aside>...</aside>
+    <footer>...</footer>
+  </body>
+</html>
